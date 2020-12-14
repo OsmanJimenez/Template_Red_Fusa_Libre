@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #645e5e;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.small{
+    padding: 5px;
+}
+
+.medium{
+   padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.contenedor{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contenedor_2{
+    width: 90%;
+    
+    margin: 20px;
+}
+
+.contenedor_2 a{
+    padding:.3em .5em;
+}
+
+/*Landing */
+
+.landing{
+    padding: 50px;
+}
+
+.landing h1{
+    font-size: 60px;
+}
+
+.landing p{
+    font-size: 20px;
+}
+
+.landing .row img{
+    width: 620px;
+    height: 300px;
+    border-radius: 7px;
+}
+
+
+
+/* Header */
+
+header{
+    padding: 40px;
+}
+
+header .logo{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header .logo p{
+    color:#9b9b9b;
+}
+
+header form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+header .barra-busqueda{
+    width: 70%;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    padding: 0 20px;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+header .categorias{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header .categorias a{
+    color: #9b9b9b;
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+header .categorias a.activo{
+    color: #000;
+}
+
+/* Grid Productos */
+
+.Titulos{
+    text-align: center;
+}
+
+.grid{
+    position: relative;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+}
+
+.btn{
+    display: flex;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.grid.imagenes-cargadas{
+    opacity: 1;
+}
+
+.grid .item{
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+}
+
+.grid .item-contenido{
+    position: relative;
+}
+
+.grid .item img{
+    width: 100%;
+    cursor: pointer;
+    vertical-align: top;
+    border-radius: 7px;
+}
+
+/*Footer */
+footer{
+    border-radius: 7px;
+}
+
+
+
+/*Mediaqueries*/
+@media screen and (max-width: 700px){
+    .grid .item{
+        width: calc(50% - 20px);
+    }
+    header .barra-busqueda{
+        width: 100%;
+    }
+}
